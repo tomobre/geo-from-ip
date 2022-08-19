@@ -1,11 +1,9 @@
 {
   "name": "geo-from-ip",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Get geolocation 🌐 information about an IP address 📲",
   "main": "lib/geo-from-ip.js",
   "scripts": {
-    "postinstall": "node lib/update.js",
-    "postinstall-debug": "DEBUG=geo-from-ip:* node lib/update.js",
     "test": "DEBUG=geo-from-ip:* jest --collectCoverage"
   },
   "repository": {
@@ -44,6 +42,7 @@
   },
   "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
+    "deasync": "^0.1.28",
     "debug": "^4.3.1",
     "maxmind-db-reader": "^0.2.1",
     "node-fetch": "^2.6.0",
