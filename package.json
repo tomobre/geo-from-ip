@@ -2,16 +2,6 @@
   "name": "geo-from-ip",
   "version": "2.2.0",
   "description": "Get geolocation 🌐 information about an IP address 📲",
-  "main": "lib/geo-from-ip.js",
-  "scripts": {
-    "fix": "standard --fix",
-    "postinstall": "cross-env DEBUG=geo-from-ip:* node lib/update.js",
-    "test": "DEBUG=geo-from-ip:* jest --collectCoverage"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/VikramTiwari/geo-from-ip.git"
-  },
   "keywords": [
     "geo",
     "ip",
@@ -24,16 +14,22 @@
     "maxmind db reader",
     "maxmind db",
     "maxmind",
-    "maxmind",
     "auto update"
   ],
-  "author": "Vikram Tiwari <vikramtheone1@gmail.com> (vikramtiwari.com)",
-  "license": "MIT",
+  "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "bugs": {
     "url": "https://github.com/VikramTiwari/geo-from-ip/issues"
   },
-  "engines": {
-    "node": ">=10"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VikramTiwari/geo-from-ip.git"
+  },
+  "license": "MIT",
+  "author": "Vikram Tiwari <vikramtheone1@gmail.com> (vikramtiwari.com)",
+  "main": "lib/main.js",
+  "scripts": {
+    "fix": "standard --fix",
+    "test": "DEBUG=geo-from-ip:* jest --collectCoverage"
   },
   "prettier": {
     "printWidth": 80,
@@ -42,7 +38,6 @@
     "tabWidth": 2,
     "trailingComma": "all"
   },
-  "homepage": "https://github.com/VikramTiwari/geo-from-ip",
   "dependencies": {
     "cross-env": "^7.0.0",
     "debug": "^4.1.1",
@@ -53,5 +48,8 @@
   "devDependencies": {
     "chance": "^1.1.4",
     "jest": "^26.5.0"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }
